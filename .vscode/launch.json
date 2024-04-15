@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Attach to gdbserver",
+            "executable": "${workspaceRoot}/kernel",
+            "target": ":26000",
+            "remote": true,
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText",
+            "preLaunchTask": "xv6build",
+            "postDebugTask": "stopxv6",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
